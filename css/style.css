@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15%;
+   
+}
+/* left side */
+.card-container { 
+    position: relative;
+   
+}
+.card-img {
+    height: 100vh;
+}
+
+.card-heading {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 12rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: roboto;
+}
+.logo {
+    position:absolute;
+    max-height: 100%;
+}
+/* right side */
+
+.main-container {
+    background-color: red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #fdfdfd;
+    flex:1;
+}
+
+form {
+    background-color: white;
+    height: 12em;
+}
+.footer {
+    background-color: #fdfdfd;
+    flex: 1;
+}
