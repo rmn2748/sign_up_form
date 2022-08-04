@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse;
+    src: url(../fonts/Norse.otf);
+}
+
 body {
     background-color: black;
 }
@@ -5,51 +10,66 @@ body {
 .body {
     display: flex;
     flex-direction: row;
-    margin: 0 15%;
+   
    
 }
 /* left side */
 .card-container { 
-    position: relative;
+    background-color: blue;
+    width: 40%;
+    height:100vh;
+   
    
 }
-.card-img {
-    height: 100vh;
-}
 
-.card-heading {
-    position: absolute;
-    width: 100%;
-    background: black;
-    opacity: 0.6;
-    color: white;
-    top: 12rem;
-    text-align: center;
-    font-size: 4.5rem;
-    font-family: roboto;
-}
-.logo {
-    position:absolute;
-    max-height: 100%;
-}
 /* right side */
 
 .main-container {
-    background-color: red;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 .header {
-    background-color: #fdfdfd;
+    padding : 2em;
+    background-color: #fdfdfdf8;
     flex:1;
 }
 
-form {
-    background-color: white;
-    height: 12em;
+.header-main-content {
+    margin : 6em 15em 2em 0;
 }
+
+form {
+    padding : 2em;
+    background-color: white;
+    
+}
+.main-form {
+    display: flex;
+    font-family: Open sans, Helvetica Neue, Helvetica, Arial;
+
+}
+.left-form, .right-form {
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+}
+.left-form div, .right-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin : 0.5em;
+}
+.left-form {
+    width: 40%;
+}
+label {
+    font-size: 12px;
+}
+
 .footer {
+    padding : 2em;
     background-color: #fdfdfd;
     flex: 1;
 }
