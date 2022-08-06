@@ -3,10 +3,6 @@
     src: url(../fonts/Norse.otf);
 }
 
-body {
-    background-color: black;
-}
-
 .body {
     display: flex;
     flex-direction: row;
@@ -65,7 +61,6 @@ form {
 }
 .main-form {
     display: flex;
-    font-family: Open sans, Helvetica Neue, Helvetica, Arial;
 
 }
 .left-form, .right-form {
@@ -87,11 +82,31 @@ label {
     font-size: 12px;
 }
 .left-form input, .right-form input {
-    border : 2px solid #E5E7EB;
+    border : 1px solid #E5E7EB;
     width : 250px;
 }
 .footer {
     padding : 2em;
     background-color: #fdfdfdf8;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: rgb(15, 92, 15);
+    border : none;
+    color : white;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    margin: 0 0 0.5em 0;    
+}
+input:focus {
+    border-color: red;
+}
+button:hover, button:focus {
+    background-color: #2d3d1d;
+}
+input[type="password"]:invalid {
+    border: 5px solid red;
 }
